@@ -1,16 +1,16 @@
 # Report: Predict Bike Sharing Demand with AutoGluon Solution
-#### NAME HERE
+#### RUTH NDUTA
 
 ## Initial Training
 ### What did you realize when you tried to submit your predictions? What changes were needed to the output of the predictor to submit your results?
-TODO: Add your explanation
+Initially, the submission failed giving an error for the date time data type to be converted to string from datetime.
 
 ### What was the top ranked model that performed?
-TODO: Add your explanation
+The hyperparameter tuned model performed best. Optimizing the hyperparameters allowed for improvement in the perfomance of the model.
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
-TODO: Add your explanation
+
 
 ### How much better did your model preform after adding additional features and why do you think that is?
 TODO: Add your explanation
