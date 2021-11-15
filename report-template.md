@@ -28,26 +28,24 @@
 | 1       | 311   |
 
 ### How much better did your model preform after adding additional features and why do you think that is?
-TODO: Add your explanation
+- The model performance greatly improved from a score of -116.245448 prior to feature engineering to -35.610270 after.
+- This maybe due to the models used since they are able to select important features and ignore the less important thus e.g for the date column, separating it into year, months and days the models are able to gauge which to choose and which to ignore.
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-TODO: Add your explanation
+- For Hyper parameter tuning, I only changed the parameters to default and auto for the model to use the parameters it sees fit. The model performance was not any different from the previous model from feature selection giving a score of -35.702828.
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
-TODO: Add your explanation
+- Seeing how the model performance did not improve with my choice of hyperparameters, I would spend more time working on this and i creating more features to fit into the training data.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-|model|hpo1|hpo2|hpo3|score|
-|--|--|--|--|--|
-|initial|?|?|?|?|
-|add_features|?|?|?|?|
-|hpo|?|?|?|?|
+| model        | hpo1                    | hpo2         | hpo3       | score   |
+|--------------|-------------------------|--------------|------------|---------|
+| initial      | root_mean_squared_error | best_quality | regression | 1.39219 |
+| add features | root_mean_squared_error | best_quality | regression | 0.45737 |
+| hpo          | default                 | auto         | regression | 0.45873 |
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
-
-TODO: Replace the image below with your own.
-
 ![model_train_score.png](img/model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
@@ -57,4 +55,4 @@ TODO: Replace the image below with your own.
 ![model_test_score.png](img/model_test_score.png)
 
 ## Summary
-TODO: Add your explanation
+Autogluon is quite efficient compared to the other ML 
