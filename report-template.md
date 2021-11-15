@@ -3,14 +3,29 @@
 
 ## Initial Training
 ### What did you realize when you tried to submit your predictions? What changes were needed to the output of the predictor to submit your results?
-Initially, the submission failed giving an error for the date time data type to be converted to string from datetime.
+- Initially, the submission failed giving an error for the date time data type to be converted to string from datetime.
+- Having negative values in the predictions may have also prohibited the submission from getting through since after replacing the negatives with zero it was successful.
 
 ### What was the top ranked model that performed?
-The hyperparameter tuned model performed best. Optimizing the hyperparameters allowed for improvement in the perfomance of the model.
+- The WeightedEnsemble_L3 performed best with a score value of 7.214185.
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
+- Data imbalance in the columns e.g the weather column where category 4 had only one entry.
 
+| Weather | Count |
+|---------|-------|
+| 1       | 7192  |
+| 2       | 2834  |
+| 3       | 859   |
+| 4       | 1     |
+
+- Holiday column also had uneven data distribution which is understandable since we have fewer holidays compared to working days
+
+| Holiday | Count |
+|---------|-------|
+| 0       | 10575 |
+| 1       | 311   |
 
 ### How much better did your model preform after adding additional features and why do you think that is?
 TODO: Add your explanation
