@@ -50,9 +50,20 @@
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-TODO: Replace the image below with your own.
 
 ![model_test_score.png](img/model_test_score.png)
 
 ## Summary
-Autogluon is quite efficient compared to the other ML 
+
+AutoGluon, an open-source AutoML tool uses just one line of Python code to train extremely accurate machine learning models on unprocessed tabular datasets like CSV files. It succeeds by assembling several models and stacking them in various layers. Experiments show that our multi-layer combination of several models makes better use of training time than searching for the best.
+
+I enjoyed working with AutoGluon mainly because:
+
+1.  Simplicity. you can immediately train a model on raw data without knowing anything about the data or ML models.
+2.  Robustness. The framework can handle a wide range of structured datasets and ensures that training continues even if any of the individual machine learning models fail.
+3.  Fault Tolerance. At any point when working, you can pause and resume it. 
+4.  Timing that can be predicted. You can specify a timeframe for the results to be returned.
+5.  Ability to tune your custom models and data pipelines with ease, or tailor the AutoGluon to your needs
+
+
+AutoGluon allows simple-to-use and extensible AutoML, with a focus on automated stack ensembling, deep learning, and real-world applications encompassing text, image, and tabular data. 
